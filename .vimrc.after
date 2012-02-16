@@ -1,0 +1,19 @@
+" Customizations for MacVim Janus (released during Jan 2012)
+"----------------------------------------------------------
+" Gimme some nice theme
+color railscasts
+" Make shift keys work
+let macvim_hig_shift_movement = 1
+" Option-Command-<Arrow keys> should switch between buffer windows
+map <D-A-RIGHT> <C-w>l
+map <D-A-LEFT> <C-w>h
+map <D-A-DOWN> <C-w><C-w>
+map <D-A-UP> <C-w>W
+" Backspace key will work like delete key in selection mode
+map <BS> <DEL>
+" Make MacVim cursor control more like a GUI editor
+:behave mswin
+:set keymodel=stopsel
+:set selection=exclusive
+
+
